@@ -1,6 +1,6 @@
-[![Docker pulls](https://img.shields.io/docker/pulls/garyfeng/docker-opensmile.svg)](https://hub.docker.com/r/garyfeng/docker-opensmile/)
-[![Docker Build](https://img.shields.io/docker/automated/garyfeng/docker-opensmile.svg)](https://hub.docker.com/r/garyfeng/docker-opensmilee/)
-[![Latest Tag](https://img.shields.io/github/tag/garyfeng/docker-opensmile.svg)](https://hub.docker.com/r/garyfeng/docker-opensmile/)
+[![Docker pulls](https://img.shields.io/docker/pulls/garyfeng/docker-pyaa.svg)](https://hub.docker.com/r/garyfeng/docker-pyaa/)
+[![Docker Build](https://img.shields.io/docker/automated/garyfeng/docker-pyaa.svg)](https://hub.docker.com/r/garyfeng/docker-pyaa/)
+[![Latest Tag](https://img.shields.io/github/tag/garyfeng/docker-pyaa.svg)](https://hub.docker.com/r/garyfeng/docker-pyaa/)
 
 # docker-openpose
 
