@@ -56,6 +56,6 @@ RUN chmod +x autorun.sh
 #ENTRYPOINT ["/autorun.sh"]
 
 # for testing, we end with a bash.
-ENTRYPOINT ["more /autorun.sh； bash"]
+ENTRYPOINT ["bash"]
 
 #CMD [bash]
