@@ -30,6 +30,7 @@ RUN apt-get install -y \
 	libav-tools
 
 # pip installs
+RUN pip install --upgrade pip
 RUN yes | pip install numpy matplotlib scipy sklearn hmmlearn simplejson eyed3 pydub
 
 # install pyAA
