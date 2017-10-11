@@ -41,7 +41,17 @@ RUN git clone https://github.com/tyiannak/pyAudioAnalysis.git
 # this also sets the working directory to /data. 
 # docker run -v C:\Users\garyfeng\Desktop\docker-pyaa:/data -w '/data' -i -t docker-pyaa
 
+# create the autorun script
+RUN echo "#!/bin/bash" >autorun.sh
+RUN echo "cd /data" >>autorun.sh
+RUN echo "for f in /data/*.mp3" >>autorun.sh
+RUN echo "    do python /pyAudioAnalysis/audioAnalysis.py featureExtractionFile -i \$f -mw 1.0 -ms 1.0 -sw 0.050 -ss 0.050 -o \$f" >>autorun.sh
+RUN echo "done" >>autorun.sh
+
+# make it an exec
+RUN chmod +x autorun.sh
+
 # set the startup script to scan the data file for *.mp3 files and process them.
-ENTRYPOINT ["for f in *.mp3; do python /pyAudioAnalysis/audioAnalysis.py featureExtractionFile -i /data/$f -mw 1.0 -ms 1.0 -sw 0.050 -ss 0.050 -o /data/$f; done"]
+ENTRYPOINT ["/autorun.sh"]
 
 #CMD [bash]
