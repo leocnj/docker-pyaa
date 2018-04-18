@@ -52,10 +52,10 @@ RUN echo "done" >>autorun.sh
 RUN chmod +x autorun.sh
 
 # set the startup script to scan the data file for *.mp3 files and process them.
-# the following line will run the /autorun.sh and quit the docker instance; good for production
-#ENTRYPOINT ["/autorun.sh"]
+# the following line will run the /autorun.sh and quit the docker instance; good for production#
+ENTRYPOINT ["/autorun.sh"]
 
 # for testing, we end with a bash.
-ENTRYPOINT ["bash"]
+# ENTRYPOINT ["bash"]
 
 #CMD [bash]
