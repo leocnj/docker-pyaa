@@ -2,7 +2,7 @@
 [![Docker Build](https://img.shields.io/docker/automated/garyfeng/docker-pyaa.svg)](https://hub.docker.com/r/garyfeng/docker-pyaa/)
 [![Latest Tag](https://img.shields.io/github/tag/garyfeng/docker-pyaa.svg)](https://hub.docker.com/r/garyfeng/docker-pyaa/)
 
-# docker-openpose
+# docker-pyaa
 
 Docker Image for [pyAudioAnalysis](https://github.com/tyiannak/pyAudioAnalysis). 
 

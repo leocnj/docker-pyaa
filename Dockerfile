@@ -44,8 +44,8 @@ RUN git clone https://github.com/tyiannak/pyAudioAnalysis.git
 # create the autorun script
 RUN echo "#!/bin/bash" >autorun.sh
 RUN echo "cd /data" >>autorun.sh
-RUN echo "for f in /data/*.mp3" >>autorun.sh
-RUN echo "    do python /pyAudioAnalysis/audioAnalysis.py featureExtractionFile -i \$f -mw 1.0 -ms 1.0 -sw 0.050 -ss 0.050 -o \$f" >>autorun.sh
+RUN echo "for f in /data/*.wav" >>autorun.sh
+RUN echo "    do python /pyAudioAnalysis/audioAnalysis.py featureExtractionFile -i \$f -mw 1.0 -ms 1.0 -sw 0.02 -ss 0.01 -o \$f" >>autorun.sh
 RUN echo "done" >>autorun.sh
 
 # make it an exec
